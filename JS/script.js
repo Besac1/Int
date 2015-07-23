@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             attachTextListener(string, function () {
 
-                var str = this.value.replace(/^\s+/g, '').replace(/\s{2}/g, ' ');
+                var str = this.value.replace(/(^\s+|^[0-9])/g, '').replace(/\s{2}/g, ' ');
                 this.value = str;
                 that.traitement(string.value);
 

@@ -27,9 +27,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
             attachTextListener(string, function () {
 
-                var str = this.value.replace(/(^\s+|^[0-9])/g, '').replace(/\s{2}/g, ' ');
-                this.value = str;
-                that.traitement(string.value);
+                if (this.value.match(/^[a-zA-Z]/g)) {
+                
+                    var str = this.value.replace(/(^\s+|^[0-9])/g, '').replace(/\s{2}/g, ' ');
+                    this.value = str;
+                    that.traitement(str);
+
+                } else {
+
+                    this.value = '';
+                    that.traitement(this.value);
+
+                }
 
             });
 

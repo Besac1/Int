@@ -29,7 +29,7 @@
             <div id = 'display'>
                         
                 <p>Additions des lettres : <span id = 'number'>0</span></p>
-                <p>Nombres de charactères <span id = 'nbCharacters'>0</span></p>
+                <p>Nombres de caractères <span id = 'nbCharacters'>0</span></p>
                     
             </div>  
 
